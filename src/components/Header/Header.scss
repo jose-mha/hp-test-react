@@ -1,0 +1,63 @@
+@import "../../styles/global.scss";
+
+.header {
+    width: 281px;
+    height: 36px;
+
+    position: fixed;
+    right: 90px;
+
+    @include small {
+        bottom: 0px;
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.button-header {
+    width: 140px;
+    height: 36px;
+    color: white;
+    background: $color-primary;
+    z-index: 1;
+}
+
+.button-favorite {
+    border-bottom-left-radius: 10px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px $shadow-color;
+
+    img {
+        width: 13px;
+    }
+
+    @include small {
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 10px;
+
+        box-shadow: 0px -3px 9px 1px $shadow-color;
+    }
+}
+
+.button-add {
+    border-bottom-right-radius: 10px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px $shadow-color;
+
+    @include small {
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 10px;
+
+        box-shadow: 0px -3px 9px 1px $shadow-color;
+    }
+}
+
+.navigation {
+    margin-bottom: -9px;
+    display: flex;
+
+    @include small {
+        margin-top: -9px;
+    }
+}

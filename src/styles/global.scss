@@ -1,0 +1,31 @@
+// Responsive mixins
+// Material Design breakpoints
+
+@mixin small {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media only screen and (min-width: 760px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Gradients
+$Gryffindor: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+$Slytherin: linear-gradient(135deg, #1C792B 0%, #82E95E 100%);
+$Ravenclaw: linear-gradient(135deg, #0597B7 0%, #66D1FF 100%);
+$Hufflepuff: linear-gradient(135deg, #FFC700 0%, #FFF388 100%);
+
+$button-hover: rgba(107, 99, 181, 0.6);
+$color-primary: #6B63B5;
+$border-color: rgba(0, 0, 0, 0.6);
+$shadow-color: #444;

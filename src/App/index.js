@@ -1,16 +1,25 @@
-import './App.css';
+import Header from '../components/Header';
+import title from '../assets/title.png';
+import CharacterList from '../components/CharacterList';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div className="Container">
+      <Header />
+
+      <div className="Container-title">
+        <img className="Img-title" src={title} alt="title" />
+      </div>
+      <div className="Container-filtro">
+        <h3>Selecciona tu filtro</h3>
+      </div>
+      <div className="Container-buttons">
+        <button className="button">ESTUDIANTES</button>
+        <button className="button">STAFF</button>
+      </div>
+
+      <CharacterList />
     </div>
   );
 }

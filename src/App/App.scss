@@ -1,0 +1,68 @@
+@import "../styles/global.scss";
+
+body {
+  background-color: black;
+}
+
+.Container {
+  margin: 0px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+
+  background-image: url("../assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include small {
+    background-image: none;
+  }
+}
+
+
+.Container-filtro {
+  width: 100%;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+
+  @include small {
+    font-size: 18px;
+  }
+}
+
+.Container-buttons {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  @include small {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.button {
+  width: 288px;
+  height: 67px;
+
+  color: white;
+  border-color: $button-hover;
+
+  background: $border-color;
+  border-radius: 4px;
+
+  @include small {
+    width: 140px;
+    height: 43px;
+  }
+}
+
+.button:hover {
+  background: $button-hover;
+}
+
+.button:active {
+  background: $color-primary;
+}

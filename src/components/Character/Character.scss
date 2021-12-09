@@ -1,0 +1,161 @@
+@import "../../styles/global.scss";
+
+.Character-card {
+    overflow: hidden;
+    width: 515px;
+    height: 265px;
+
+    background: white;
+    border-radius: 16px;
+
+    display: flex;
+
+    @include small {
+        width: 140px;
+        height: 180px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Character-avatar-container {
+    width: 210px;
+    height: 265px;
+
+    background: $Gryffindor;
+    border-radius: 16px 0px 0px 16px;
+
+    @include small {
+        width: 140px;
+        height: 87px;
+    }
+}
+
+.Character-avatar {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    left: 23px;
+    top: 50px;
+    border-radius: 100px;
+
+    @include small {
+        position: relative;
+        width: 69px;
+        height: 69px;
+        left: 25%;
+        right: 25.71%;
+        top: 5.52%;
+        bottom: 56.35%;
+    }
+}
+
+.Character-data-container {
+    width: 270px;
+    height: 265px;
+
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include small {
+        width: 140px;
+        height: 94px;
+
+        padding-left: 0px;
+
+        display: flex;
+        flex-direction: column-reverse
+    }
+}
+
+.Character-header {
+    width: 270px;
+    height: 28px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999999;
+
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Character-type {
+        display: flex;
+        align-items: center;
+    }
+
+    .Character-type p {
+        padding-right: 5px;
+    }
+
+    @include small {
+        width: 140px;
+        height: 94px;
+        font-size: 10px;
+        line-height: 10px;
+
+        padding-top: 0px;
+
+        flex-direction: row;
+        justify-content: space-around;
+
+        .Character-type {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 0px;
+        }
+
+        .Character-type .Character-type-separator {
+            display: none;
+        }
+    }
+}
+
+.Character-name {
+    width: 270px;
+    height: 46px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+
+    color: #081F32;
+
+    @include small {
+        width: 140px;
+        height: 46px;
+        font-size: 20px;
+
+        text-align: center;
+    }
+}
+
+.Character-info {
+    width: 270px;
+    height: 112px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 10px;
+
+    color: #374A59;
+
+    @include small {
+        display: none;
+    }
+}
