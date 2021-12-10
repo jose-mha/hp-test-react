@@ -10,6 +10,15 @@ const addFavorite = (name, img) => {
   };
 };
 
+const removeFavorite = (name) => {
+  return {
+    type: 'REMOVE_FAVORITE',
+    payload: {
+      name: name,
+    },
+  };
+};
+
 const deposit = () => {
   return {
     type: 'DEPOSIT_MONEY',
@@ -24,4 +33,4 @@ const withdraw = () => {
   };
 };
 
-export { deposit, withdraw, addFavorite };
+export { deposit, withdraw, addFavorite, removeFavorite };

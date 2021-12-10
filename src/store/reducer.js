@@ -3,16 +3,9 @@ const characterReducer = (state = [], action) => {
     return [...state, action.payload];
   }
   if (action.type === 'REMOVE_FAVORITE') {
-    const { id } = action.payload;
-    return state.map((character) => {
-      if (character.id === id) {
-        return {
-          ...character,
-          important: !character.important,
-        };
-      }
-      return character;
-    });
+    const { name } = action.payload;
+
+    return state.filter((character) => character.name !== name);
   }
 
   return state;
