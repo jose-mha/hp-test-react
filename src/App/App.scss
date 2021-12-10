@@ -1,7 +1,8 @@
 @import "../styles/global.scss";
 
 body {
-  background-color: black;
+  //background-color: black;
+  color: black;
 }
 
 .Container {
@@ -19,6 +20,28 @@ body {
   }
 }
 
+.Characters-container {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(2, minmax(min(100%, 20rem), 1fr));
+
+  padding: 1rem;
+
+  align-items: center;
+  justify-items: center;
+
+  @include medium {
+    grid-auto-rows: 18rem;
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
+  }
+
+  @include small {
+    grid-auto-rows: 12rem;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  }
+}
 
 .Container-filtro {
   width: 100%;

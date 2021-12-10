@@ -23,13 +23,32 @@
     width: 210px;
     height: 265px;
 
-    background: $Gryffindor;
     border-radius: 16px 0px 0px 16px;
 
     @include small {
         width: 140px;
         height: 87px;
     }
+}
+
+.Character-avatar-color-Other {
+    background: $Other;
+}
+
+.Character-avatar-color-Gryffindor {
+    background: $Gryffindor;
+}
+
+.Character-avatar-color-Slytherin {
+    background: $Slytherin;
+}
+
+.Character-avatar-color-Ravenclaw {
+    background: $Ravenclaw;
+}
+
+.Character-avatar-color-Hufflepuff {
+    background: $Hufflepuff;
 }
 
 .Character-avatar {
@@ -70,6 +89,10 @@
         display: flex;
         flex-direction: column-reverse
     }
+}
+
+.Character-not-alive {
+    background-color: $NotAlive;
 }
 
 .Character-header {
@@ -130,16 +153,21 @@
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
-    line-height: 46px;
 
     color: #081F32;
 
     @include small {
         width: 140px;
         height: 46px;
-        font-size: 20px;
+        font-size: 18px;
 
+        margin-top: 12px;
         text-align: center;
+        line-height: 18px;
+
+        svg{
+            font-size: 15px !important;
+        }
     }
 }
 
