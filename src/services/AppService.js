@@ -24,7 +24,7 @@ class AppService {
    * @endpoint /characters
    */
   async newCharacter(payload) {
-    return await API.post(`${this.url}characters`, payload);
+    return await API.post(`${this.url}staff`, payload);
   }
 
   /**

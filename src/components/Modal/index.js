@@ -7,14 +7,10 @@ import './Modal.scss';
 function Modal({ children }) {
   const { setOpenModal } = React.useContext(AppContext);
 
-  const onCancel = () => {
-    setOpenModal(false);
-  };
-
   return ReactDOM.createPortal(
     <div className="ModalBackground">
       <div className="container-modal-header">
-        <span onClick={onCancel}>
+        <span onClick={() => setOpenModal(false)}>
           <FaRegWindowClose style={{ fontSize: '30px' }} />
         </span>
       </div>

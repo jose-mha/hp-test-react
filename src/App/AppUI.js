@@ -9,21 +9,28 @@ import AppService from '../services/AppService';
 import React, { useEffect } from 'react';
 
 import { AppContext } from './context';
+import Dialog from '../components/Dialog';
 
-// import Counter from '../components/Counter';
 function AppUI() {
-  const { openModal, setOpenModal } = React.useContext(AppContext);
+  const { openModal, setOpenModal, openDialog, setOpenDialog, message, setMessage } = React.useContext(AppContext);
   const [listCharacters, setListCharacters] = React.useState([]);
 
-  const getCharacters = async () => {
-    const response = await AppService.getCharacters();
-    console.log(response.data);
-    setListCharacters(response.data);
-  };
-  const getStaff = async () => {
-    const response = await AppService.getStaff();
-    console.log(response.data);
-    setListCharacters(response.data);
+  const getDatas = async (filter) => {
+    try {
+      let response;
+      if (filter === 'students') response = await AppService.getCharacters();
+      else response = await AppService.getStaff();
+
+      if (response.status === 200) {
+        setListCharacters(response.data);
+      } else {
+        setOpenDialog(true);
+        setMessage('Hubo un inconveniente al obtener los datos');
+      }
+    } catch (error) {
+      setOpenDialog(true);
+      setMessage('Upps, hubo un error al obtener los datos');
+    }
   };
 
   useEffect(() => {
@@ -42,10 +49,10 @@ function AppUI() {
           <h3>Selecciona tu filtro</h3>
         </div>
         <div className="Container-buttons">
-          <button className="button" onClick={() => getCharacters()}>
+          <button className="button" onClick={() => getDatas('students')}>
             ESTUDIANTES
           </button>
-          <button className="button" onClick={() => getStaff()}>
+          <button className="button" onClick={() => getDatas('staff')}>
             STAFF
           </button>
         </div>
@@ -61,7 +68,9 @@ function AppUI() {
             <CharacterForm />
           </Modal>
         )}
+        {!!openDialog && <Dialog>{message}</Dialog>}
         <br></br>
+
         {/* <Counter></Counter> */}
       </div>
     </React.Fragment>

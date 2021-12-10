@@ -3,9 +3,7 @@ import Axios from 'axios';
  * * Método base para realizar la llamada al servicio REST.
  */
 const Request = (method, url, payload) => {
-  payload = payload ? payload : {};
-
-  let { data = {} } = payload;
+  let data = payload ? payload : {};
 
   //* Creamos el header por default
   let requestHeaders = {
