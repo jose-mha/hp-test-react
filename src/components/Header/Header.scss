@@ -6,6 +6,7 @@
 
     position: fixed;
     right: 90px;
+    z-index: 1;
 
     @include small {
         bottom: 0px;
@@ -20,7 +21,6 @@
     height: 36px;
     color: white;
     background: $color-primary;
-    z-index: 1;
 }
 
 .button-favorite {

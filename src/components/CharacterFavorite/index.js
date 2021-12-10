@@ -1,40 +1,18 @@
 import React from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
-import avatar from '../../assets/avatar.png';
 import './CharacterFavorite.scss';
 
 function CharacterFavorite(props) {
+  const character = props.character;
   return (
-    <div className={'container-favorite ' + props.status}>
-      <div className="container-favorite-character">
-        <div className="center">
-          <img className="character-favorite-avatar" src={avatar} alt="avatar" />
-        </div>
-        <p className="center">Luna Lovegood</p>
-        <h3 className="center">
-          <FaTrashAlt />
-        </h3>
+    <div className="container-favorite-character">
+      <div className="center">
+        <img className="character-favorite-avatar" src={character.image} alt="avatar" />
       </div>
-      <div className="separator"></div>
-      <div className="container-favorite-character">
-        <div className="center">
-          <img className="character-favorite-avatar" src={avatar} alt="avatar" />
-        </div>
-        <p className="center">Luna Lovegood</p>
-        <h3 className="center">
-          <FaTrashAlt />
-        </h3>
-      </div>
-      <div className="separator"></div>
-      <div className="container-favorite-character">
-        <div className="center">
-          <img className="character-favorite-avatar" src={avatar} alt="avatar" />
-        </div>
-        <p className="center">Luna Lovegood</p>
-        <h3 className="center">
-          <FaTrashAlt />
-        </h3>
-      </div>
+      <p className="center">{character.name}</p>
+      <h3 className="center">
+        <FaTrashAlt />
+      </h3>
     </div>
   );
 }

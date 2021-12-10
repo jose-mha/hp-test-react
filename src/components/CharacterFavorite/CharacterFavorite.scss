@@ -1,26 +1,5 @@
 @import "../../styles/global.scss";
 
-.container-favorite {
-    display: none;
-    color: white;
-    background-color: $color-primary;
-    padding: 5px 0px 5px 0px;
-
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    @include small {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-}
-
-.container-favorite.active {
-    display: block;
-}
-
 .container-favorite-character {
     height: 43px;
     margin: 10px 0px 10px 0px;
@@ -60,10 +39,4 @@
         width: 150px;
         margin-top: 30px;
     }
-}
-
-.separator {
-    border: 0.5px solid #403B6D;
-    margin: 0px 23px 0px 23px;
-    padding: 0px;
 }
