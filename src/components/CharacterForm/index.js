@@ -92,7 +92,9 @@ function CharacterForm() {
           </div>
         </div>
         <div className="TodoForm-buttonContainer">
-          <button type="submit">GUARDAR</button>
+          <button className="button-form" type="submit">
+            GUARDAR
+          </button>
         </div>
       </form>
     </div>

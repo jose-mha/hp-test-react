@@ -967,6 +967,15 @@
       "hairColour": "Negro",
       "gender": "Mujer",
       "typeCharacter": "Estudiante"
+    },
+    {
+      "id": 246653,
+      "name": "JoseMHA",
+      "dateOfBirth": "demo",
+      "eyeColour": "moe",
+      "hairColour": "wet",
+      "gender": "Hombre",
+      "typeCharacter": "Estudiante"
     }
   ],
   "students": [

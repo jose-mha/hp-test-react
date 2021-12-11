@@ -28,6 +28,7 @@
     @include small {
         width: 140px;
         height: 87px;
+        border-radius: 0px;
     }
 }
 
@@ -185,5 +186,29 @@
 
     @include small {
         display: none;
+    }
+}
+
+.tag-no-select{
+    width: 25px;
+    height: 100%;
+    background-image: url("../../assets/icon-favorite.png");
+    background-position: top;
+    background-repeat: no-repeat;
+
+    @include small {
+        height: 50%;
+    }
+}
+
+.tag-select{
+    width: 25px;
+    height: 100%;
+    background-image: url("../../assets/icon-favorite-color.png");
+    background-position: top;
+    background-repeat: no-repeat;
+
+    @include small {
+        height: 50%;
     }
 }

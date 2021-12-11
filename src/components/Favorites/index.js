@@ -15,7 +15,7 @@ function Favorites() {
   return (
     <div className="container-favorite">
       {favoritesIsEmpty && (
-        <div>
+        <div className="no-content">
           <h3>No hay personajes</h3>
         </div>
       )}

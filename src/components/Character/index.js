@@ -9,8 +9,8 @@ import { AppContext } from '../../App/context';
 
 function Character(props) {
   const { setShowFavorites } = React.useContext(AppContext);
-
   const dispatch = useDispatch();
+  const [tag, setTag] = React.useState('tag-no-select');
 
   const character = props.character;
   const personaje = 'Harry Potter';
@@ -19,6 +19,7 @@ function Character(props) {
     console.log('Agregando a favoritos', character.name);
     dispatch(addFavorite(character.name, character.image));
     setShowFavorites(true);
+    setTag('tag-select');
   };
 
   return (
@@ -33,8 +34,8 @@ function Character(props) {
             <p className="Character-type-separator">/</p>
             <p>{character.hogwartsStudent ? 'ESTUDIANTE' : character.hogwartsStaff ? 'STAFF' : ''}</p>
           </div>
-          <span onClick={() => addCharacterFavorite(character)}>
-            <img src={character.name === personaje ? favoriteColor : favorite} alt="favorite" />
+          <span className={tag} onClick={() => addCharacterFavorite(character)}>
+            {/* <img src={character.name === personaje ? favoriteColor : favorite} alt="favorite" /> */}
           </span>
         </div>
         <div className="Character-name">

@@ -51,12 +51,12 @@ h1{
     @include small {
         position: absolute;
         left: 175px;
-        bottom: 70px;
+        bottom: 95px;
     }
 }
 
 label {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -72,9 +72,14 @@ label {
 input[type=text] {
     width: 310px;
     height: 73px;
+    font-family: 'Open Sans';
 
     background: #e3e3e3;
     border-radius: 5.33333px 5.33333px 0px 0px;
+
+    border: 1px;
+    text-align: center;
+    font-size: 18px;
 
     @include small {
         height: 35px;
@@ -93,14 +98,17 @@ input[type=text] {
     }
 }
 
-button {
+.button-form {
     width: 288px;
     height: 67px;
+    font-weight: 600;
+    font-size: 17px;
     color: #fff;
     background: rgba(0, 0, 0, 0.6);
     border: 4px solid $color-primary;
     box-sizing: border-box;
     border-radius: 4px;
+    letter-spacing: 0.2em;
 
     @include small {
         height: 50px;
