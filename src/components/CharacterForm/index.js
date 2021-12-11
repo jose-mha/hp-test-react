@@ -83,7 +83,7 @@ function CharacterForm() {
               <input type="radio" value="Hombre" checked={true} name="gender" onChange={handleChange} /> Hombre
             </div>
           </div>
-          <div className="form-group">
+          <div className="form-group radio-group">
             <label>POSICIÓN</label>
             <div>
               <input type="radio" value="Estudiante" checked={true} name="typeCharacter" onChange={handleChange} /> Estudiante

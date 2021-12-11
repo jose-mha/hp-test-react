@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .ModalBackground {
     position: fixed;
 
@@ -11,6 +13,11 @@
 
     background: white;
     border-radius: 10px;
+
+    @include small {
+        width: 350px;
+        height: 510px;
+    }
 }
 
 .container-modal-header {
