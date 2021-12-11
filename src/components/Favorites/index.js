@@ -10,7 +10,7 @@ function Favorites() {
   const characters = useSelector((state) => state.characterReducer);
   const favoritesIsEmpty = characters.length === 0;
 
-  console.log('Favoritos', characters.length);
+  // console.log('Favoritos', characters.length);
 
   return (
     <div className="container-favorite">

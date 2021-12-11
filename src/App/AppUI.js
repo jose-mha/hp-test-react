@@ -34,8 +34,7 @@ function AppUI() {
   };
 
   useEffect(() => {
-    // getCharacters();
-    console.log('Se ha renderizado el componente');
+    // console.log('Se ha renderizado el componente');
   }, [listCharacters]);
   return (
     <React.Fragment>

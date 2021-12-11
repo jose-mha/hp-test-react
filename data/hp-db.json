@@ -976,6 +976,92 @@
       "hairColour": "wet",
       "gender": "Hombre",
       "typeCharacter": "Estudiante"
+    },
+    {
+      "type": "ADD_FAVORITE",
+      "payload": {
+        "id": 123,
+        "name": "Gemelo Harry Potter",
+        "dateOfBirth": "31-06-1980",
+        "eyeColour": "green",
+        "hairColour": "black",
+        "gender": "male",
+        "hogwartsStudent": true,
+        "hogwartsStaff": false,
+        "alive": true
+      },
+      "id": 246654
+    },
+    {
+      "type": "ADD_FAVORITE",
+      "payload": {
+        "id": 123,
+        "name": "Gemelo Harry Potter",
+        "dateOfBirth": "31-06-1980",
+        "eyeColour": "green",
+        "hairColour": "black",
+        "gender": "male",
+        "hogwartsStudent": true,
+        "hogwartsStaff": false,
+        "alive": true
+      },
+      "id": 246655
+    },
+    {
+      "id": 123,
+      "name": "Gemelo Harry Potter",
+      "dateOfBirth": "31-06-1980",
+      "eyeColour": "green",
+      "hairColour": "black",
+      "gender": "male",
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
+      "alive": true
+    },
+    {
+      "id": 362864,
+      "name": "Gemelo Harry Potter",
+      "dateOfBirth": "31-06-1980",
+      "eyeColour": "green",
+      "hairColour": "black",
+      "gender": "male",
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
+      "alive": true
+    },
+    {
+      "id": 230931,
+      "name": "Gemelo Harry Potter",
+      "dateOfBirth": "31-06-1980",
+      "eyeColour": "green",
+      "hairColour": "black",
+      "gender": "male",
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
+      "alive": true
+    },
+    {
+      "id": 10807,
+      "name": "JoseMHA",
+      "dateOfBirth": "demo",
+      "eyeColour": "moe",
+      "hairColour": "qert",
+      "gender": "male",
+      "typeCharacter": "student",
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
+      "alive": true
+    },
+    {
+      "id": 510006,
+      "name": "Gemelo Harry Potter",
+      "dateOfBirth": "31-06-1980",
+      "eyeColour": "green",
+      "hairColour": "black",
+      "gender": "male",
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
+      "alive": true
     }
   ],
   "students": [

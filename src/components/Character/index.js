@@ -1,6 +1,4 @@
 import React from 'react';
-import favorite from '../../assets/icon-favorite.png';
-import favoriteColor from '../../assets/icon-favorite-color.png';
 import { FaCross } from 'react-icons/fa';
 import './Character.scss';
 import { useDispatch } from 'react-redux';
@@ -13,7 +11,6 @@ function Character(props) {
   const [tag, setTag] = React.useState('tag-no-select');
 
   const character = props.character;
-  const personaje = 'Harry Potter';
 
   const addCharacterFavorite = (character) => {
     console.log('Agregando a favoritos', character.name);
