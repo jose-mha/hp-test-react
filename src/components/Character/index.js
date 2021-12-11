@@ -3,14 +3,24 @@ import favorite from '../../assets/icon-favorite.png';
 import favoriteColor from '../../assets/icon-favorite-color.png';
 import { FaCross } from 'react-icons/fa';
 import './Character.scss';
+import { useDispatch } from 'react-redux';
+import { addFavorite } from '../../store/action';
+import { AppContext } from '../../App/context';
 
 function Character(props) {
+  const { setShowFavorites } = React.useContext(AppContext);
+
+  const dispatch = useDispatch();
+
   const character = props.character;
   const personaje = 'Harry Potter';
 
-  const addFavorite = (character) => {
+  const addCharacterFavorite = (character) => {
     console.log('Agregando a favoritos', character.name);
+    dispatch(addFavorite(character.name, character.image));
+    setShowFavorites(true);
   };
+
   return (
     <div className={'Character-card ' + (!character.alive ? 'Character-not-alive' : '')}>
       <div className={'Character-avatar-container Character-avatar-color-' + (character.house ? character.house : 'Other')}>
@@ -23,7 +33,7 @@ function Character(props) {
             <p className="Character-type-separator">/</p>
             <p>{character.hogwartsStudent ? 'ESTUDIANTE' : character.hogwartsStaff ? 'STAFF' : ''}</p>
           </div>
-          <span onClick={() => addFavorite(character)}>
+          <span onClick={() => addCharacterFavorite(character)}>
             <img src={character.name === personaje ? favoriteColor : favorite} alt="favorite" />
           </span>
         </div>

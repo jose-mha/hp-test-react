@@ -59,7 +59,7 @@ function AppUI() {
 
         <div className="Characters-container">
           {listCharacters.map((character) => (
-            <Character key={character.name} character={character} />
+            <Character key={character.name + character.actor} character={character} />
           ))}
         </div>
 

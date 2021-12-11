@@ -2,20 +2,26 @@ import React from 'react';
 import CharacterFavorite from '../CharacterFavorite';
 import './Favorites.scss';
 
-import { addFavorite } from '../../store/action';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
+// import { AppContext } from '../../App/context';
 
 function Favorites() {
+  // const { setCountFavorites } = React.useContext(AppContext);
   const characters = useSelector((state) => state.characterReducer);
-  const dispatch = useDispatch();
-  const img = 'http://hp-api.herokuapp.com/images/harry.jpg';
+  const favoritesIsEmpty = characters.length === 0;
+
+  console.log('Favoritos', characters.length);
+
   return (
     <div className="container-favorite">
-      <button onClick={() => dispatch(addFavorite('Josemha', img))}>Add Static</button>
-
-      {characters.map((character) => (
+      {favoritesIsEmpty && (
         <div>
-          <CharacterFavorite key={character.name} character={character} />
+          <h3>No hay personajes</h3>
+        </div>
+      )}
+      {characters.map((character) => (
+        <div key={character.name}>
+          <CharacterFavorite character={character} />
           <div className="separator"></div>
         </div>
       ))}

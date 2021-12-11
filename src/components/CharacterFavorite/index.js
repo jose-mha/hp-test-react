@@ -15,7 +15,7 @@ function CharacterFavorite(props) {
         <img className="character-favorite-avatar" src={character.image} alt="avatar" />
       </div>
       <p className="center">{character.name}</p>
-      <h3 className="center" onClick={() => dispatch(removeFavorite('Josemha'))}>
+      <h3 className="center" onClick={() => dispatch(removeFavorite(character.name))}>
         <FaTrashAlt />
       </h3>
     </div>

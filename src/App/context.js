@@ -5,6 +5,8 @@ const AppContext = React.createContext();
 function AppProvider({ children }) {
   const [openModal, setOpenModal] = React.useState(false);
   const [openDialog, setOpenDialog] = React.useState(false);
+  const [showFavorites, setShowFavorites] = React.useState(false);
+  const [countfavorites, setCountFavorites] = React.useState(0);
   const [message, setMessage] = React.useState('');
 
   return (
@@ -14,6 +16,10 @@ function AppProvider({ children }) {
         setOpenModal,
         openDialog,
         setOpenDialog,
+        showFavorites,
+        setShowFavorites,
+        countfavorites,
+        setCountFavorites,
         message,
         setMessage,
       }}
