@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# `Instalación`
+Instalamos las dependencias necesarias para poder iniciar el proyecto
+```bash
+npm install
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# `Scripts`
+## Iniciar Projecto
+Con el siguiente comando compilamos y ejecutamos nuestro proyecto
+```bash
+npm start
+```
+Una vez termine de compilar podrás ver el proyecto en http://localhost:3000
+### Fake API
+Inicia una API de ejemplo con json-server
+```bash
+npm run start-api
+```
+Es primordial que se esté ejecutando la API para que nuestro proyecto pueda funcionar correctamente de acuerdo a las funcionalidades principales.
+Después de ingresar el comando podrás acceder al API así como también los endpoints que son accesibles
+- http://localhost:5000
+- http://localhost:5000/characters
+- http://localhost:5000/gryffindor
+- http://localhost:5000/staff
+- http://localhost:5000/students
+## Tests
+Con el siguiente comando inicia las pruebas unitarias que se crearon de acuerdo a las principales funcionalidades del proyecto
+```bash
+npm run start-api
+```
+La salida del resultado de las pruebas se mostrara de la siguiente manera
+```bash
+PASS  src/tests/Actions.test.js
+PASS  src/tests/Reducers.test.js
+PASS  src/tests/AppService.test.js
+PASS  src/tests/App.test.js
 
-## Available Scripts
+Test Suites: 4 passed, 4 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+```
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Retrospectiva
+----
+##### ¿Qué es lo que más te gustó de tu desarrollo?
+- Me gusto poder practicar mis habilidades de front con react ya que no había tenido la oportunidad de practicar a fondo con esta librería, como hasta este momento. En cierto modo había como que no conocía tan bien, solamente lo básico, pero tuve la oportunidad de reforzar mi conocimiento durante este tiempo.
+##### Si hubieras tenido más tiempo ¿qué hubieras mejorado o qué más hubieras hecho?
+- Me hubiera gustado poder mejorar en la parte de la maquetación así como tal cual se muestra en look & feel que nos proporcionaron, así como también algunas pequeñas mejoras en la parte mobile.
+- Uno de los temas que trataría sería el poder crear alguna api aparte de la de ejemplo que se usó en este desarrollo, para que así me permitiera poder guardar imágenes de manera más sencilla
+- Y otro tema que también podría haber mejorado seria la parte del código bien estructurado, ya que con el tiempo que se establecido para la prueba solamente pude estructurar bien una parte del código.
+##### Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
+- Tuve el inconveniente de los estilos en ciertas partes de los componentes, al principio solo maquete todo de manera estática, y posteriormente ya que se consumían los servicios al api, los componentes ya con la información se movían o se juntaban, en cierto modo al terminar una funcionalidad me dedicaba a solucionar los fallos en los estilos tanto  desktop como mobile.
+- Como no tenía otro recurso que pudiera almacenar imágenes de manera más directa, deje en pausa esa funcionalidad, para que posteriormente realice con más calma el recurso mencionado y así poder finalizar dicha funcionalidad.

@@ -549,6 +549,17 @@
       "actor": "David Bradley",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/filch.jpg"
+    },
+    {
+      "id": 910262,
+      "name": "Gemelo Harry Potter",
+      "dateOfBirth": "31-06-1980",
+      "eyeColour": "green",
+      "hairColour": "black",
+      "gender": "male",
+      "hogwartsStudent": true,
+      "hogwartsStaff": false,
+      "alive": true
     }
   ],
   "gryffindor": [
@@ -949,119 +960,6 @@
       "actor": "David Bradley",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/filch.jpg"
-    },
-    {
-      "id": 200296,
-      "name": "JoseMHA",
-      "dateOfBirth": "10-03-1995",
-      "eyeColour": "Cafe",
-      "hairColour": "Negro",
-      "gender": "Hombre",
-      "typeCharacter": "Estudiante"
-    },
-    {
-      "id": 181633,
-      "name": "JoseMHA",
-      "dateOfBirth": "demo",
-      "eyeColour": "Cafe",
-      "hairColour": "Negro",
-      "gender": "Mujer",
-      "typeCharacter": "Estudiante"
-    },
-    {
-      "id": 246653,
-      "name": "JoseMHA",
-      "dateOfBirth": "demo",
-      "eyeColour": "moe",
-      "hairColour": "wet",
-      "gender": "Hombre",
-      "typeCharacter": "Estudiante"
-    },
-    {
-      "type": "ADD_FAVORITE",
-      "payload": {
-        "id": 123,
-        "name": "Gemelo Harry Potter",
-        "dateOfBirth": "31-06-1980",
-        "eyeColour": "green",
-        "hairColour": "black",
-        "gender": "male",
-        "hogwartsStudent": true,
-        "hogwartsStaff": false,
-        "alive": true
-      },
-      "id": 246654
-    },
-    {
-      "type": "ADD_FAVORITE",
-      "payload": {
-        "id": 123,
-        "name": "Gemelo Harry Potter",
-        "dateOfBirth": "31-06-1980",
-        "eyeColour": "green",
-        "hairColour": "black",
-        "gender": "male",
-        "hogwartsStudent": true,
-        "hogwartsStaff": false,
-        "alive": true
-      },
-      "id": 246655
-    },
-    {
-      "id": 123,
-      "name": "Gemelo Harry Potter",
-      "dateOfBirth": "31-06-1980",
-      "eyeColour": "green",
-      "hairColour": "black",
-      "gender": "male",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "alive": true
-    },
-    {
-      "id": 362864,
-      "name": "Gemelo Harry Potter",
-      "dateOfBirth": "31-06-1980",
-      "eyeColour": "green",
-      "hairColour": "black",
-      "gender": "male",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "alive": true
-    },
-    {
-      "id": 230931,
-      "name": "Gemelo Harry Potter",
-      "dateOfBirth": "31-06-1980",
-      "eyeColour": "green",
-      "hairColour": "black",
-      "gender": "male",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "alive": true
-    },
-    {
-      "id": 10807,
-      "name": "JoseMHA",
-      "dateOfBirth": "demo",
-      "eyeColour": "moe",
-      "hairColour": "qert",
-      "gender": "male",
-      "typeCharacter": "student",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "alive": true
-    },
-    {
-      "id": 510006,
-      "name": "Gemelo Harry Potter",
-      "dateOfBirth": "31-06-1980",
-      "eyeColour": "green",
-      "hairColour": "black",
-      "gender": "male",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "alive": true
     }
   ],
   "students": [
